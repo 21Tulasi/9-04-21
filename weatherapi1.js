@@ -4,7 +4,7 @@ function fetchWeather(){
 const request=new XMLHttpRequest();
 city=document.getElementById("temp").value;
 API='da2c2b04eefbebf1234c8c9ac3944ff7';
-url=`http://api.openweathermap.org/data/2.5/forecast?q=${city}&units=metric&appid=${API}`;
+url=`https://api.openweathermap.org/data/2.5/forecast?q=${city}&units=metric&appid=${API}`;
 request.open("GET",url,true);
 request.send();
 request.onload=()=>{

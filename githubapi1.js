@@ -4,7 +4,7 @@ function fetchRepository()
 {
 const request=new XMLHttpRequest();
 uname=document.getElementById("uname").value;
-url=`http://api.github.com/users/${uname}/repos`;
+url=`https://api.github.com/users/${uname}/repos`;
 request.open("GET",url,true);
 request.send();
 request.onload=()=>{
